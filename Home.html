@@ -1,0 +1,111 @@
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen"/>
+  <meta http-equiv="refresh" content="10">
+
+</head>
+<body>
+  <header>
+    <img src="https://media-exp1.licdn.com/dms/image/C5603AQFvgnJzSnyUxw/profile-displayphoto-shrink_400_400/0/1593373380758?e=1614816000&v=beta&t=xrS1_PkxCjZsUDOeHpPKfGFy5xnNoDTnjbQLD1s4qUc" id="me">
+    <h1>
+      Matt Moore
+    </h1>
+  </header>
+  <div>
+
+    <article class="about" id="one">
+      <button type="button" class="collapsible">
+        <h3 class="topcard">
+          Who I am
+        </h3>
+      </button>
+      <div class="content">
+        In a nutshell: <br /> Cowboy turned soldier with 4 years of Active Duty experience as a hardworking and essential team member with the aim of pursuing a career in information technology. A passion for problem solving and a knack for exceling under pressure. Able to adjust to a changing environment with a mindset that favors growth, flexibility and creativity. Excellent written and verbal communication skills to encourage productivity. Driven by a desire to learn and collaborate to overcome any challenge.
+      </div>
+    </article>
+    <article class="about" id="two">
+      <button type="button" class="collapsible">
+        <h3>
+          What I've Done
+        </h3>
+      </button>
+      <div class="content">
+        <article>
+            <button type="button" class="collapsible">
+              Physics
+            </button>
+            <div class="content">
+              In 2007, I enrolled in college at Fordham University for Engineering Physics. Here it was my love of learning was first exposed to the raw power and capability of technology.
+            </div>
+        </article>
+          <article>
+            <button type="button" class="collapsible">
+              Cowboy <img src="https://imgur.com/VLN2zqV">
+            </button>
+            <div class="content">
+              I left Fordham in 2010, and began to work as a full time horse wrangler and trainer on a variety of different farms and ranches. The five years between 2010 and 2015 were amazing: I rode for countless hours, trained and interacted with thousands of horses, and was granted the opportunity to travel around the country offering clinics, buying and selling horses, and exploring much of this nation's beautiful natural parklands.
+            </div>
+          </article>
+          <article>
+            <button type="button" class="collapsible">
+              Soldier
+            </button>
+            <div class="content">
+              In 2015 I enlisted in the US Army as an infantryman with a trajectory towards Special Operations. In 2016, I was reassigned to the logistics branch, where I served as an Automated Logistician until 2020.
+            </div>
+          </article>
+      </div>
+    </article>
+    <article class="about" id="three">
+      <button type="button" class="collapsible">
+        <h3>
+          What I'm Learning
+        </h3>
+      </button>
+      <div class="content">
+      </div>
+    </article>
+    <article class="about" id="four">
+      <button type="button" class="collapsible">
+        <h3>
+          How to Reach Me
+        </h3>
+      </button>
+      <div class="content">
+        <p>
+          Shoot me an email! : matt.m.moore13@outlook.com
+        </p>
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/matt-m-moore-130013" class="fa fa-linkedin" target="_blank" id="ss">
+            </a>
+          </li>
+          <li>
+            <a href="#" class="fa fa-facebook" target="_blank" id="ss">
+            </a>
+          </li>
+          <li>
+            <a href="#" class="fa fa-twitter" target="_blank" id="ss">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </article>
+  </div>
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  </script>
+</body>
